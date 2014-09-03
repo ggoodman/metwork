@@ -1,0 +1,78 @@
+.selected .thumbnail {
+  outline: 2px solid #2a6496;
+  outline-offset: -2px;
+}
+
+.thumbnail .crop-vertical {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  
+  &:before {
+    content: "";
+    display: block;
+    margin-top: 100%;
+  }
+    
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.profile-description .btn.dropdown-toggle {
+  line-height: 40px;
+}
+
+.mw-flashmessage {
+  position: relative;
+  top: -20px;
+  border-radius: 0;
+}
+
+.mw-usercard {
+  height: 60px;
+  position: relative;
+  
+  .innercard {
+    padding: 4px;
+    background-color: #fafafa;
+    border: 1px solid #f5f5f5;
+    border-radius: 2px;
+    height: 60px;
+  }
+  
+  .contact {
+    margin-left: 54px;
+
+    .fullname {
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    .tagline {
+      margin: 0;
+      font-size: 90%;
+      height: 36px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-all;
+    }
+  }
+
+  &.expanded {
+    .innercard {
+      position: absolute;
+      height: 400px;
+    }
+    
+    .tagline {
+      overflow: visible;
+      text-overflow: ellipsis;
+      word-break: default;
+    }
+  }
+}

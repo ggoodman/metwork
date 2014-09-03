@@ -1,0 +1,64 @@
+.selected .thumbnail {
+  outline: 2px solid #2a6496;
+  outline-offset: -2px;
+}
+.thumbnail .crop-vertical {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.thumbnail .crop-vertical:before {
+  content: "";
+  display: block;
+  margin-top: 100%;
+}
+.thumbnail .crop-vertical img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.profile-description .btn.dropdown-toggle {
+  line-height: 40px;
+}
+.mw-flashmessage {
+  position: relative;
+  top: -20px;
+  border-radius: 0;
+}
+.mw-usercard {
+  height: 60px;
+  position: relative;
+}
+.mw-usercard .innercard {
+  padding: 4px;
+  background-color: #fafafa;
+  border: 1px solid #f5f5f5;
+  border-radius: 2px;
+  height: 60px;
+}
+.mw-usercard .contact {
+  margin-left: 54px;
+}
+.mw-usercard .contact .fullname {
+  font-weight: bold;
+  margin: 0;
+}
+.mw-usercard .contact .tagline {
+  margin: 0;
+  font-size: 90%;
+  height: 36px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.mw-usercard.expanded .innercard {
+  position: absolute;
+  height: 400px;
+}
+.mw-usercard.expanded .tagline {
+  overflow: visible;
+  text-overflow: ellipsis;
+  word-break: default;
+}
